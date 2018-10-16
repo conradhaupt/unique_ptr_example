@@ -1,5 +1,6 @@
-#ifndef MYCLASS_H
-#define MYCLASS_H
+#ifndef SHAPE_H
+#define SHAPE_H
+#include "log.h"
 
 /**
  * @brief Abstract shape class
@@ -7,6 +8,9 @@
  */
 class Shape {
  public:
+  Shape();
+  Shape(const Shape& shp);
+
   virtual ~Shape();
 
   virtual int numberOfSides() const = 0;

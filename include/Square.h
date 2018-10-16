@@ -4,6 +4,9 @@
 
 class Square : public Shape {
  public:
+  Square();
+  Square(const Square& sqr);
+  virtual ~Square() override;
   int numberOfSides() const override;
 
  private:
