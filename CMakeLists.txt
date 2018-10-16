@@ -14,7 +14,8 @@ add_executable(uniquePtrExample
                # Cpp code
                ${UPE_SOURCE_DIR}/Shape.cpp
                ${UPE_SOURCE_DIR}/Square.cpp
-                ${UPE_SOURCE_DIR}/main.cpp)
+               ${UPE_SOURCE_DIR}/Circle.cpp
+               ${UPE_SOURCE_DIR}/main.cpp)
 
 # Handle include paths
 target_include_directories(
