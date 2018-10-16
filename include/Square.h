@@ -9,6 +9,8 @@ class Square : public Shape {
   virtual ~Square() override;
   int numberOfSides() const override;
 
+  std::unique_ptr<Shape> clone() const override;
+
  private:
   const static int _nSides;
 };

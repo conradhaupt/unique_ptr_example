@@ -1,5 +1,6 @@
 #ifndef SHAPE_H
 #define SHAPE_H
+#include <memory>
 #include "log.h"
 
 /**
@@ -22,6 +23,8 @@ class Shape {
   bool operator>(const Shape& rhs);
   bool operator<=(const Shape& rhs);
   bool operator>=(const Shape& rhs);
+
+  virtual std::unique_ptr<Shape> clone() const = 0;
 };
 
 #endif

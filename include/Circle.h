@@ -8,6 +8,7 @@ class Circle : public Shape {
   Circle();
   Circle(const Circle& crcl);
   virtual ~Circle();
+  std::unique_ptr<Shape> clone() const override;
   int numberOfSides() const override;
 };
 
